@@ -21,7 +21,7 @@ export class App {
   // }
 
   handleCounter(val: string) {
-    if (val == 'minus') {
+    if (val == 'minus' && this.count > 0) {
       this.count -= 1;
     } else if (val == 'plus') {
       this.count += 1;
